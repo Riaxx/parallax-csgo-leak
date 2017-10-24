@@ -1,0 +1,33 @@
+class IMaterial {
+public:
+	virtual const char* GetName();
+	virtual const char* GetTextureGroupName();
+	virtual void Func2();
+	virtual void Func3();
+	virtual void Func4();
+	virtual void Func5();
+	virtual void Func6();
+	virtual void Func7();
+	virtual void Func8();
+	virtual void Func9();
+	virtual void Func10();
+	virtual void Func11();
+	virtual void IncrementReferenceCount();
+	virtual void Func13();
+	virtual void Func14();
+	virtual void Func15();
+	virtual void Func16();
+	virtual void Func17();
+	virtual void Func18();
+	virtual void Func19();
+	virtual void Func20();
+	virtual void Func21();
+	virtual void Func22();
+	virtual void Func23();
+	virtual void Func24();
+	virtual void Func25();
+	virtual void Func26();
+	virtual void AlphaModulate(float alpha);
+	virtual void ColorModulate(float r, float g, float b);
+	virtual void SetVarFlag(EFlags flag, bool on);
+};

@@ -1,0 +1,42 @@
+#define PRINTF_FORMAT_STRING _Printf_format_string_
+class ICvar {
+public:
+	virtual void Func0();
+	virtual void Func1();
+	virtual void Func2();
+	virtual void Func3();
+	virtual void Func4();
+	virtual void Func5();
+	virtual void Func6();
+	virtual void Func7();
+	virtual void Func8();
+	virtual void Func9();
+	virtual void Func10();
+	virtual void Func11();
+	virtual void Func12();
+	virtual void Func13();
+	virtual void Func14();
+	virtual void Func15();
+	virtual void Func16();
+	virtual void Func17();
+	virtual void Func18();
+	virtual void Func19();
+	virtual void Func20();
+	virtual void Func21();
+	virtual void Func22();
+	virtual void Func23();
+	virtual void Func24();
+	virtual void ConsoleColorPrintf(const Color& clr, PRINTF_FORMAT_STRING const char *pFormat, ...);
+	virtual void ConsolePrintf(PRINTF_FORMAT_STRING const char *pFormat, ...);
+	virtual void ConsoleDPrintf(PRINTF_FORMAT_STRING const char *pFormat, ...);
+	virtual void Func28();
+	virtual void Func29();
+	virtual void Func30();
+	virtual void Func31();
+	virtual void Func32();
+	virtual void Func33();
+	virtual void Func34();
+	virtual void Func35();
+	virtual void Func36();
+	virtual void Func37();
+};

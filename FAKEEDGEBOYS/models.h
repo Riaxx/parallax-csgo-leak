@@ -1,0 +1,54 @@
+#pragma once
+typedef unsigned short MDLHandle_t;
+struct studiohdr_t;
+struct studiohwdata_t;
+struct vcollide_t;
+struct virtualmodel_t;
+struct vertexFileHeader_t;
+enum MDLCacheFlush_t
+{
+	MDLCACHE_FLUSH_STUDIOHDR = 0x01,
+	MDLCACHE_FLUSH_STUDIOHWDATA = 0x02,
+	MDLCACHE_FLUSH_VCOLLIDE = 0x04,
+	MDLCACHE_FLUSH_ANIMBLOCK = 0x08,
+	MDLCACHE_FLUSH_VIRTUALMODEL = 0x10,
+	MDLCACHE_FLUSH_AUTOPLAY = 0x20,
+	MDLCACHE_FLUSH_VERTEXES = 0x40,
+
+	MDLCACHE_FLUSH_IGNORELOCK = 0x80000000,
+	MDLCACHE_FLUSH_ALL = 0xFFFFFFFF
+};
+class CMDLCache {
+public:
+	virtual void func0();
+	virtual void func1();
+	virtual void func2();
+	virtual void func3();
+	virtual void func4();
+	virtual void func5();
+	virtual void func6();
+	virtual void func7();
+	virtual void func8();
+	virtual void SetCacheNotify(int *pNotify) = 0;
+	virtual MDLHandle_t FindMDL(const char *pMDLRelativePath) = 0;
+	virtual int AddRef(MDLHandle_t handle) = 0;
+	virtual int Release(MDLHandle_t handle) = 0;
+	virtual int GetRef(MDLHandle_t handle) = 0;
+	virtual studiohdr_t *GetStudioHdr(MDLHandle_t handle) = 0;
+	virtual studiohwdata_t *GetHardwareData(MDLHandle_t handle) = 0;
+	virtual vcollide_t *GetVCollide(MDLHandle_t handle) = 0;
+	virtual unsigned char *GetAnimBlock(MDLHandle_t handle, int nBlock) = 0;
+	virtual virtualmodel_t *GetVirtualModel(MDLHandle_t handle) = 0;
+	virtual int GetAutoplayList(MDLHandle_t handle, unsigned short **pOut) = 0;
+	virtual vertexFileHeader_t *GetVertexData(MDLHandle_t handle) = 0;
+	virtual void TouchAllData(MDLHandle_t handle) = 0;
+	virtual void SetUserData(MDLHandle_t handle, void* pData) = 0;
+	virtual void *GetUserData(MDLHandle_t handle) = 0;
+	virtual bool IsErrorModel(MDLHandle_t handle) = 0;
+	virtual void Flush(MDLCacheFlush_t nFlushFlags = MDLCACHE_FLUSH_ALL) = 0;
+	virtual void Flush(MDLHandle_t handle, int nFlushFlags = MDLCACHE_FLUSH_ALL) = 0;
+	virtual const char *GetModelName(MDLHandle_t handle) = 0;
+	virtual virtualmodel_t *GetVirtualModelFast(const studiohdr_t *pStudioHdr, MDLHandle_t handle) = 0;
+	virtual void BeginLock() = 0;
+	virtual void EndLock() = 0;
+};

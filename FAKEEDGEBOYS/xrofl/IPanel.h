@@ -1,0 +1,41 @@
+class IPanel {
+public:
+	virtual void Func0(); // = 0;
+	virtual void Func1(); // = 0;
+	virtual void Func2(); // = 0;
+	virtual void Func3(); // = 0;
+	virtual void Func4(); // = 0;
+	virtual void Func5(); // = 0;
+	virtual void Func6(); // = 0;
+	virtual void Func7(); // = 0;
+	virtual void Func8(); // = 0;
+	virtual void Func9(); // = 0;
+	virtual void Func10(); // = 0;
+	virtual void Func11(); // = 0;
+	virtual void Func12(); // = 0;
+	virtual void Func13(); // = 0;
+	virtual void Func14(); // = 0;
+	virtual void Func15(); // = 0;
+	virtual void Func16(); // = 0;
+	virtual void Func17(); // = 0;
+	virtual void Func18(); // = 0;
+	virtual void Func19(); // = 0;
+	virtual void Func20(); // = 0;
+	virtual void Func21(); // = 0;
+	virtual void Func22(); // = 0;
+	virtual void Func23(); // = 0;
+	virtual void Func24(); // = 0;
+	virtual void Func25(); // = 0;
+	virtual void Func26(); // = 0;
+	virtual void Func27(); // = 0;
+	virtual void Func28(); // = 0;
+	virtual void Func29(); // = 0;
+	virtual void Func30(); // = 0;
+	virtual void Func31(); // = 0;
+	virtual void Func32(); // = 0;
+	virtual void Func33(); // = 0;
+	virtual void Func34(); // = 0;
+	virtual void Func35(); // = 0;
+	virtual const char* GetName(unsigned int vgui) = 0; // = 36;
+	virtual const char* GetClassName(unsigned int vguiPanel) = 0; // = 37
+};

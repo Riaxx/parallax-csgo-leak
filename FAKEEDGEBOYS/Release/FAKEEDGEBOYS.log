@@ -1,0 +1,12 @@
+﻿  main.cpp
+  LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+misc.obj : warning LNK4006: "void __cdecl VectorTransform2(class Vector,float (* const)[4],class Vector &)" (?VectorTransform2@@YAXVVector@@QAY03MAAV1@@Z) already defined in main.obj; second definition ignored
+netvars.obj : warning LNK4006: "void __cdecl VectorTransform2(class Vector,float (* const)[4],class Vector &)" (?VectorTransform2@@YAXVVector@@QAY03MAAV1@@Z) already defined in main.obj; second definition ignored
+offsets.obj : warning LNK4006: "bool __cdecl DataCompare(unsigned char const *,unsigned char const *,char const *)" (?DataCompare@@YA_NPBE0PBD@Z) already defined in main.obj; second definition ignored
+offsets.obj : warning LNK4006: "struct tagMODULEENTRY32 * __cdecl GetModuleInfo(char *)" (?GetModuleInfo@@YAPAUtagMODULEENTRY32@@PAD@Z) already defined in main.obj; second definition ignored
+offsets.obj : warning LNK4006: "void __cdecl VectorTransform2(class Vector,float (* const)[4],class Vector &)" (?VectorTransform2@@YAXVVector@@QAY03MAAV1@@Z) already defined in main.obj; second definition ignored
+offsets.obj : warning LNK4006: "unsigned long __cdecl dwFindPattern(unsigned long,unsigned long,unsigned char *,char *)" (?dwFindPattern@@YAKKKPAEPAD@Z) already defined in main.obj; second definition ignored
+offsets.obj : warning LNK4006: "unsigned long __cdecl xyzFindPattern(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?xyzFindPattern@@YAKV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z) already defined in main.obj; second definition ignored
+offsets.obj : warning LNK4006: "unsigned long __cdecl zFindPattern(char *,unsigned char *,char *)" (?zFindPattern@@YAKPADPAE0@Z) already defined in main.obj; second definition ignored
+C:\Users\zohan\Documents\Visual Studio 2017\Projects\FAKEEDGEBOYS\Release\parallax.dll : warning LNK4088: image being generated due to /FORCE option; image may not run
+  FAKEEDGEBOYS.vcxproj -> C:\Users\zohan\Documents\Visual Studio 2017\Projects\FAKEEDGEBOYS\Release\parallax.dll
